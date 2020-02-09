@@ -34,4 +34,13 @@ public class Teacher {
     public void addStudent(Student newStudent) {
         this.studentList.add(newStudent);
     }
+
+    public void getAllStudents() {
+        for (Student num : studentList) {
+            String name = num.name;
+            int age = num.age;
+            String gender = num.gender;
+            System.out.println(name + ", " + age + ", " + gender);
+        }
+    }
 }
